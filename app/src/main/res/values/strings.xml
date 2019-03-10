@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Snap it!</string>
+    <string name="detection">Detection mode</string>
+    <string name="game">Game mode</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/appBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/appName"
+        android:text="@string/app_name"
+        app:fontFamily="@font/myfont"
+        android:textSize="150dp"
+        android:gravity="center"
+        android:textColor="@color/customred"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/buttonlayout"
+    app:layout_constraintTop_toBottomOf="@+id/appName"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:gravity="center"
+    android:weightSum="3">
+    <Button
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/appBackground"
+        android:text="@string/game"
+        android:textColor="@color/customred"
+        android:textSize="25dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/detect"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+
+    <Button
+        android:id="@+id/detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/appBackground"
+        android:text="@string/detection"
+        android:textColor="@color/customred"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detect"
+        android:id="@+id/multiplayer"
+        android:layout_margin="20dp"
+        android:background="@color/appBackground"
+        android:text="Multiplayer"
+        android:textSize="25dp"
+        android:layout_weight="1"
+        android:textColor="@color/customred"
+        />
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
